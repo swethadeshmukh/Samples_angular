@@ -1,0 +1,117 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<style type="text/css">
+	.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
+    max-height: 400px !important;
+}
+.pic {
+  width: 100%;
+  //max-height: 400px !important;
+}
+</style>
+<script>
+	/*$('#signIn').click(function () {
+   //switch_style($(this).text());
+   alert("hello");
+        });*/
+
+</script>
+</head>
+<body>
+<!--Heading-->
+<div class='container'>
+	<div class='well'>
+		<div class='row'><p class='col-lg-7 col-xs-7' style="font-size:45px"><img src="images/star pad.png" width="30px" height='30px'/> Aero Engines </p>
+						 <p class='col-lg-3 col-xs-3'><input type="Search" placeholder='Search'><button type="submit" class="btn btn-icon glyphicon glyphicon-search"></button></p>
+						 <!--p class='col-lg-3 col-xs-3'><button type="submit" class="btn btn-icon glyphicon glyphicon-search"></button></p-->
+						 <div class="btn-group col-lg-2 col-xs-3">
+				            <button class="btn dropdown-toggle" data-toggle="dropdown">Customer Login </button>
+				            <ul class="dropdown-menu">
+				              <li><a href="loginForm.html">myAviation</a></li>
+				              <li><a href="">Customer Web Center</a></li>
+				              <li><a href="">Engine Portal</a></li>
+				            </ul>
+						</div> 
+	</div>
+</div>
+
+<nav id="myNavbar" class="navbar navbar-default" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="container">
+            <!--div class="navbar-header">
+                <a class="navbar-brand" href="#">Brand</a>
+            </div-->
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="row" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav col-lg-12 col-xs-12">
+                    <li><a href="HomePage.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Engines <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Commercial</a></li>
+                            <li><a href="#">Marine</a></li>
+                            <li><a href="#">Military</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Trash</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Service N Support <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Electric Power</a></li>
+                            <li><a href="#">Avionics</a></li>
+                            <li><a href="#">Structures</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Trash</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Press </a>
+                        
+                    </li>
+                    <li class="dropdown">
+                       <a href="#" data-toggle="dropdown" class="dropdown-toggle">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="aboutProj.html">Me</a></li>
+                            <li><a href="aboutMe.html">Project</a></li>
+                        </ul>
+                        
+                    </li>
+                    <li class="dropdown">
+                        <a href="contact.html">Contact</a>
+                        
+                    </li>
+                </ul>
+               
+            </div><!-- /.navbar-collapse -->
+        </div>
+     </nav>
+
+
+
+
+<div class='container'>
+	<div class='well'><center>
+		<div id="login" style='collapse'>
+			<b>Enter your Username and Password<br><br>
+			User Name</b> <input type="text" Placeholder='Enter Username'><br><br>
+			<b>Password</b> <input type="password" Placeholder='Enter Password'><br><br>
+			<button class='btn btn-info' value='0'>Login</button> <button class='btn btn-info' id='signIn'>Sign Up</button>
+		</div>
+		<!--div id="Reg" style="display: none">
+			<b>Please fill in the details<br><br>
+			User Name</b> <input type="text" Placeholder='Enter Username'><br><br>
+			<b>Password</b> <input type="password" Placeholder='Enter Password'><br><br>
+			<button class='btn btn-info signIn' value='1' onclick="register();">Sign Up</button>
+		</div-->
+	</center>
+	</div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<html>
+
+<body>
+
+<style>
+
+#d1
+
+{
+
+background-color:green;
+
+width:400px;
+
+height:200px;
+
+}
+
+</style>
+
+</style>
+
+<script src="js/jquery-2.1.4.min.js"></script>
+
+<script type="text/javascript">
+	
+	function jq1()
+	{
+		//alert("hello");
+		$('#d1').fadeOut(500);
+		$('#d1').fadeIn();
+		//alert("Done");
+	}
+	function jq2(){
+		$('#d1').slideUp(500);
+		$('#d1').slideDown();
+	}
+	function jq3()
+	{
+		$('#d1').hide(500);
+		$('#d1').show(500);
+	}
+</script>
+
+<div id="d1">
+</div>
+
+<input type='button' value="fadeout fadein with delay" onclick="jq1()">
+
+<br>
+
+<input type='button' value="slideup and slide down with delay" onclick="jq2()">
+
+<br>
+
+<input type='button' value="animate" onclick="jq3()">
+
+<br>
+
+</body>
+
+</html>

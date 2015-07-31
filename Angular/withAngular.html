@@ -1,0 +1,52 @@
+<html>
+<head>
+</head>
+<body ng-app>DISPLAYING VALUE FROM A MODEL:<br><br>
+	Enter ur name <input type='text' ng-model='name'>
+	Your Name is {{name}}<br>
+-----------------------------------------------------------<br><br>
+CONCATINATING 2 Model values: <br><br>
+Enter First Name <input type='text' ng-model='fname'><br><br>
+Enter Last Name <input type='text' ng-model='lname'><br><br>
+Full Name is : {{fname +" " +lname}}<br>
+
+---------------------------------------------------------<br><br>
+
+<div ng-init="fruits=['apple','Mango','Bannana','Peach']">
+	<ul>RETRIVE DATA FROM ARRAY
+		<li ng-repeat='all in fruits'>{{all}}</li>
+	</ul>
+</div>
+
+------------------------------------------------------------------<br><br>
+<div ng-init="employee={firstName:'swetha',lastName:'deshmukh',destination:'Developer'}">
+	<ul> RETRIVE DATA FROM OBJECT
+		<li>{{employee.firstName}}</li>
+		<li>{{employee.lastName}}</li>
+		<li>{{employee.destination}}</li>
+
+</div>
+----------------------------------------------------------------<br><br>
+
+<div ng-init="money=[1,2,43,54]">
+DISPLAY VALUES IN ARRAY IN UPPER CASE N CURRENCY<br><br>
+<table>
+  <tr ng-repeat='all in fruits'>
+  	<td ng-repeat=' mon in money'>{{all | uppercase}} --  {{mon | currency}} </td>
+  </tr>
+</table>
+</div>
+
+--------------------------------------------------------------<br><br>
+Enter Values to be FILTERED below  <input type='text' ng-model='searchVal'>
+<ul>
+  <li ng-repeat='all in fruits | filter:searchVal'>{{all}}</li>
+
+</ul>
+
+----------------------------------------------------------------<br><br>
+
+
+	<script src='js/angular.min.js'></script>
+</body>
+</html>

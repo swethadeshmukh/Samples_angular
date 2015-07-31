@@ -1,0 +1,23 @@
+
+<!doctype html>
+<html>
+<body>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script>
+$(document).ready(function()
+{
+	alert("hello");
+	$("#b1").bind("click.training",{n1:5,n2:3},function(evt){
+		var x=evt.data.n1;
+		var y=evt.data.n2;
+		alert(x+y);
+	});
+})
+function unbindF()
+{
+$("#b1").bind("click.training")
+}
+</script>
+<input type="button" id="b1" value="add" onclick="alert('namespace')">
+<input type="button" id="b2" value="unbind" onclick="unbindF()">
+</html>

@@ -1,0 +1,26 @@
+<html ng-app="myApp">
+<head>
+</head>
+<body ng-controller="myCtrl">
+	<h2 ng-model='firstName'>{{firstName}}</h2>
+	<h2 ng-model='lastName'>{{lastName}}</h2>
+-----------------------------------------------------------------------------------------------------------------<br><br>
+	<ul> DISPLAY ARRAY OF FRUITS
+			<li ng-repeat="all in fruits">{{all}}</li>
+	</ul>
+-----------------------------------------------------------------------------------------------------------------<br><br>
+	<ul> CALCULATE N DISPLAY EMPLOYEE DETAILS
+		<li>{{"Emp No: "+ employee.empNo}}</li>
+		<li>{{"Emp First Name :"+ employee.firstName}}</li>
+		<li>{{"Salary :"+ employee.salary}}</li>
+		<li>{{"Bonus : "+ bonus}}</li>
+		<li>{{"Annual Salary : "+ annual}}</li>
+		<li>{{"Gross Salary : "+ gross}}</li>
+		<li>{{"Annual Tax : "+ tax}}</li>
+		<li>{{"Net Salary : "+net}}</li>
+	</ul>
+------------------------------------------------------------------------------------------------------------------<br><br>
+	<script src="js/angular.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>

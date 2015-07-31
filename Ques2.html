@@ -1,0 +1,43 @@
+<!--transfer all the paragraphs from div with id d1 to div with id d2-->
+<!doctype html>
+
+<html>
+<head>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript">
+	function transferd1tod2()
+	{
+		alert("IN");
+		$('#d1').appendTo('#d2');
+	}
+</script>
+</head>
+
+<body>
+
+<div id="d1">
+
+<p>IN D1-------</p>
+<p>Bob the Builder</p>
+
+<p>Chota Bheem</p>
+
+<p>Doraemon</p>
+
+<p>Shaktiman</p>
+
+<p>Roll No 21</p>
+
+</div>
+
+<div id="d2">
+
+<p>IN D2---------</p>
+
+</div>
+
+<input type="button" onclick="transferd1tod2()" value="d1 data to d2">
+
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+<html ng-app="myEmpApp">
+<head>
+</head>
+<body ng-controller="myEmpCtrl">
+	
+<table >
+	<tr ng-repeat='info in empInfo'>
+	<td ng-model>{{info.LName}}</td>
+	</tr>
+</table>
+
+	<script src="js/angular.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>

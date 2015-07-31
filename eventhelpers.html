@@ -1,0 +1,39 @@
+<html>
+<head>
+<style>
+.cr_green
+{
+color:green;
+
+
+}
+</style>
+
+<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+<script type="text/javascript">
+ctr=0;
+function fun2()
+{
+
+ $('#menu li').hover(function ()
+{
+$(this).addClass('cr_green');
+
+
+});
+}
+$(document).ready(fun2);
+ 
+
+
+</script>
+</head>
+<body>
+<ol id="menu">
+<li>ATM</li>
+<li>Net Banking</li>
+<li>Phone Banking</li>
+</ol>
+</body>
+</html>
+

@@ -1,0 +1,33 @@
+<html>
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript">
+	function fun1()
+	{
+		$('p').each(function(idx,elem){
+			alert(idx+'---'+$(elem).html());
+		})
+	}
+	function fun2(){
+		sum=0;
+		$.each([2,2,4],function(idx,elem){
+			sum=sum+elem;
+		})
+		alert(sum);
+	}
+	function fun3(){
+		$.each({name:'abc',id:'001'},function(proName,proVal){
+			alert(proName+"--"+proVal);
+		})
+	}
+</script>
+<body>
+<p>India</p>
+<p>India</p>
+<p>India</p>
+<p>India</p>
+<input type='button' value='$.fn.each' onclick='fun1()'>
+<input type='button' value='$.each with array' onclick='fun2()'>
+<input type='button' value='$.each with Object' onclick='fun3()'>
+</body>
+</html>

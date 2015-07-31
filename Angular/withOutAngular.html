@@ -1,0 +1,61 @@
+<html>
+<head>
+<script type="text/javascript">
+	function writeVal(val){
+		//Display the name entered.
+		var nameOri=document.getElementById('name').value;
+		document.getElementById('here1').innerHTML=nameOri;
+		//Display First and Last Name together.
+		var nameF=document.getElementById('fname').value;
+		var nameL=document.getElementById('lname').value;
+		document.getElementById('full').innerHTML=nameF+" "+nameL;
+	}
+	function displayArr()
+	{
+		var fruits=['Apple','Bannana','Mango'];
+		var mainList=document.getElementById('arr');
+		for(var i=0;i<fruits.length;i++)
+		{
+			var myList=document.createElement('li');
+			myList.innerHTML=fruits[i];
+			mainList.appendChild(myList);
+		}
+	}
+	function displayObj()
+	{
+		alert("IN");
+		var employee={firstName:'swetha',lastName:'deshmukh',destination:'Developer'};
+		var mainList=document.getElementById('obj');
+		for(var i=0;i<fruits.length;i++)
+		{
+			var myList=document.createElement('li');
+			myList.innerHTML=fruits[i];
+			mainList.appendChild(myList);
+		}
+	}
+	
+</script>
+</head>
+<body onload='displayArr()'>
+	Enter Your Name <input type='text' id='name' onkeyup="writeVal(this.value)"><br>
+	The Name u entered is : <p id='here1'></p>
+-------------------------------------------------------------------------------------------<br><br>
+	
+	Enter ur First Name <input type='text' id='fname' onkeyup="writeVal(this.value)"><br><br>
+	Enter ur last Name <input type='text' id='lname' onkeyup="writeVal(this.value)"><br><br>
+	Ur Full Name is : <p id='full'></p><br><br>
+
+----------------------------------------------------------------------------------------------------<br><br>
+
+	<ul id='arr'>DISPLAYING ARRAY VALUES
+	</ul>
+----------------------------------------------------------------------------------------------------------<br><br>
+
+	<input type='button' id='objDis' value='Click Here For Object Values' onclick="displayObj()">
+    <ul id='obj'> DISPLAY OBJECT VALUE
+    </ul>
+
+ ---------------------------------------------------------------------------------------------------------<br><br>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<head>
+<style>
+.off{
+background-color:blue
+}
+.on{
+background-color:yellow
+}
+</style>
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script language="javascript">
+var x=function()
+{
+$('#lb').bind('changestate', fun2);
+}
+$(document).ready(x);
+function fun2()
+{
+var $light = $(this);
+if ($light.hasClass('on')) 
+{
+	$light.removeClass('on').addClass('off');
+	$('#bulb').attr({'src': 'bulboff.png'});
+
+}
+	else
+{
+	$light.removeClass('off').addClass('on');
+	$('#bulb').attr({'src': 'bulbon.png'});
+
+}
+alert("best");
+}function fun1()
+{
+alert("hi");
+
+ $('#lb').trigger('changestate');
+
+}
+</script>
+</head>
+<body>
+<div style="height:500px; width:500px" id="lb">
+<img src="bulbon.png" id="bulb">
+Bulb</div>
+<input type="button" onclick="fun1()" value="Switch on /off">
+</body>
+</html>

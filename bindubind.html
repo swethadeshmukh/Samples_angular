@@ -1,0 +1,42 @@
+<html>
+<head>
+<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+<script type="text/javascript">
+ctr=0;
+$(document).ready(function()
+{
+alert("hi");
+}
+);
+
+function fun2()
+{
+$('#list1').unbind('click');
+
+}
+function fun1()
+{
+$('#list1').bind('click', function(e) {
+var x=$(this);
+alert(x.html());
+});
+
+
+
+
+}
+</script>
+</head>
+<body>
+<p>This is a paragraph.</p>
+<ol id="list1">
+<li>India</li>
+<li>china</li>
+<li>UK</li>
+<li>USA</li>
+</ol>
+<button onclick="fun1()">Bind to list</button>
+<input type="button" onclick="fun2()" value="Unbind">
+</body>
+</html>
+

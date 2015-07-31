@@ -1,0 +1,28 @@
+<html>
+<head>
+</head>
+<body ng-app>
+	
+<div ng-init="flightInfo=[{flightNo:32,source:'Bangalore',destination:'Hyderabad',seatNo:6,PNRNo:21},
+						  {flightNo:56,source:'Mumbai',destination:'Kolkata',seatNo:2,PNRNo:32},
+						  {flightNo:67,source:'Bangalore',destination:'Cincinnati',seatNo:78,PNRNo:77},
+						  {flightNo:112,source:'Cincinnati',destination:'Orlando',seatNo:43,PNRNo:43}
+						]"><center><h3>Flight Details</h3>
+						<table border=1>
+							<th>flightNo</th>
+							<th>source</th>
+							<th>destination</th>
+							<th>seatNo</th>
+							<th>PNRNo</th>
+							<tr ng-repeat='all in flightInfo'>
+							  	<td >{{all.flightNo}}</td>
+								<td>{{all.source}}</td>
+								<td>{{all.destination}}</td>
+								<td>{{all.seatNo}}</td>
+								<td>{{all.PNRNo}}</td>
+							</tr>
+						</table></center>
+</div>
+	<script src='js/angular.min.js'></script>
+</body>
+</html>

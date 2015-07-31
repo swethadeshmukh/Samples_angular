@@ -1,0 +1,46 @@
+<html>
+<head>
+<style>
+.cr_green
+{
+color:green;
+}
+.cr_blue
+{
+color:blue;
+}
+</style>
+
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript">
+
+	 $('button').click(function(){
+	 	alert("IN");
+
+	 	$('#menu').toggle(
+			function()
+			{
+				alert("hello");
+				//$(this).prev().addClass('cr_blue');
+			},
+
+			function()
+			{
+				alert("hi");
+				//$(this).prev().removeClass('cr_blue');
+				//$(this).prev().addClass('cr_green');
+			}
+		);
+	 });
+</script>
+</head>
+<body>
+<ol id="menu">
+    <li>ATM</li>
+    <li>Net Banking</li>
+	<li>Phone Banking</li>
+</ol>
+<button>Click to Toggle</button>
+</body>
+</html>
+

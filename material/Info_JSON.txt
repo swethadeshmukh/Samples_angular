@@ -1,0 +1,45 @@
+
+XMLHttpRequest Level2
+
+event handlers
+onloadstart
+onprogress
+onabort
+onerror
+onload
+ontimeout
+onloadend
+onreadystatechange
+
+
+
+___________
+
+properties
+responseType
+(arraybuffer, blob, json, Text, document)
+
+
+readyState
+0=unsent
+1=opened
+2=headers received
+3=Loading
+4 =done
+
+status
+statusText
+response
+responseText
+responseXML
+_______
+
+functions
+open()
+send()
+abort()
+setRequestHeader()
+getResponseHeader()
+getAllResponseHeaders()
+_____________
+

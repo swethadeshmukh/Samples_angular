@@ -1,0 +1,64 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+<script src="js/jquery-2.1.4.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+	$('#d1').delegate('input','click',function(){
+		//alert("IN DELEGATE FUNCTION");
+		var inputVal=$(this);
+		//alert("inputVal "+inputVal.val());
+		if(inputVal.val()=='Javascript')
+			{
+				//alert("IN");
+				$('#b1').val('ECMA');
+				//alert("DONE")
+			}
+			else if(inputVal.val()=='JSON')
+			{
+				//alert("IN");
+				$('#b2').val('Douglas Crockford');
+				//alert("DONE")
+			}
+			else if(inputVal.val()=='JQuery')
+			{
+				//alert("IN");
+				$('#b3').val('John Resig');
+				//alert("DONE")
+			}
+			
+	})
+})
+
+</script>
+
+<center>
+
+<div id="d1">
+
+<input  type="button" id="b1" value="Javascript">
+
+<br><br><br>
+
+<input  type="button" id="b2" value="JSON">
+
+<br><br><br>
+
+<input  type="button" id="b3" value="JQuery">
+
+</div>
+
+</center>
+
+</body>
+
+</html>

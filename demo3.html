@@ -1,0 +1,42 @@
+
+<!doctype html>
+<!-- demo3.html -->
+<head>
+<script src="js/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+<script>
+
+function changedata()
+{
+$("p").html("JQuery Mobile");
+$("img:eq(1)").attr("src", "JohnResig3.jpg");
+
+}
+
+function getdata()
+{
+var ans= $("p").html()
+
+alert(ans);
+var a= $("img").attr("src");
+alert(a);
+}
+
+</script>
+
+<p>JQuery</p>
+<p>Angular Js</p>
+<p>Backbone js</p>
+
+<input type="button" onclick="changedata()" value="Setters">
+<br>
+<button type="button" onclick="getdata()" value="getter">Getter</button>
+<img src="images/Air pollution.jpg">
+<img src="images/spray paint.png">
+<img src="images/star pad.png">
+
+
+</body>
+
+

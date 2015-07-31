@@ -1,0 +1,40 @@
+<html ng-app="myFormApp">
+<head>
+</head>
+<body ng-controller="myFormCtrl"><center>
+<form name='empForm' novalidate>
+	<div> <b>Enter the details</b><br><br>
+		First Name <input type="text" name='fname' ng-model='firstName' ng-minlength=3 ng-maxlength= 20 ng-pattern='/[A-Za-z]/' required>
+
+		<span style='color:red' ng-show='empForm.fname.$dirty &&  empForm.fname.$invalid'>
+			<span ng-show='empForm.fname.$error.required'>Pls enter name </span>
+			<span ng-show='empForm.fname.$error.minlength'>Name should have min 3 characters </span>
+			<span ng-show='empForm.fname.$error.maxlength'>Name should have less than 20 characters </span>
+			<span ng-show='empForm.fname.$error.pattern'>Name should have only Alphabets </span>
+		</span><br><br>
+
+		Last Name <input type="text" name='lname' ng-model='lastName' ng-minlength=3 ng-pattern='/[A-Za-z]/' required>
+
+		<span style='color:red' ng-show='empForm.lname.$dirty &&  empForm.lname.$invalid'>
+			<span ng-show='empForm.lname.$error.required'>Pls enter name </span>
+			<span ng-show='empForm.lname.$error.minlength'>Name should have min 3 characters </span>
+			<span ng-show='empForm.lname.$error.pattern'>Name should have only Alphabets </span>
+		</span><br><br>
+
+		Contact No. <input type="number" name='contact' ng-model='contact' ng-pattern='/^[0-9]{10}$/'>
+		<span style='color:red' ng-show='empForm.contact.$dirty &&  empForm.contact.$invalid'>
+			<span ng-show='empForm.contact.$error.pattern'>Please check the Contact number pattern</span>
+		</span>
+
+		<br><br>
+		Age <input type="number" ng-model='age' ><br><br>
+		Email <input type="email" ng-model='email' ><br><br>
+
+		<button name="reset" value="Reset" onclick="reset()">Reset</button>
+		<button name='submit' value='Submit'>Submit</button>
+	</div>
+</form></center></center>
+	<script src="js/angular.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>

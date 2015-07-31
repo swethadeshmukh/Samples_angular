@@ -1,0 +1,43 @@
+<html>
+<head>
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript">
+ctr=0;
+$(document).ready(function()
+{
+alert("hi");
+}
+);
+
+function fun2()
+{
+$('#list1').undelegate('li', 'click');
+
+}
+function fun1()
+{
+$('#list1').delegate('li', 'click', function(e) {
+var x=$(this);
+var y='country:'+x.html();
+alert(y);
+});
+
+
+
+
+}
+</script>
+</head>
+<body>
+<p>This is a paragraph.</p>
+<ol id="list1">
+<li>India</li>
+<li>china</li>
+<li>UK</li>
+<li>USA</li>
+</ol>
+<button onclick="fun1()">Delegate</button>
+<input type="button" onclick="fun2()" value="undelegate">
+</body>
+</html>
+

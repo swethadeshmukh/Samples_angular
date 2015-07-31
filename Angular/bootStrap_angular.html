@@ -1,0 +1,17 @@
+<html ng-app>
+<head>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<script src="js/bootstrap.js"></script>
+</head>
+<body>
+	<input type="text" placeholder='Search' ng-model='findVal'/><button class="btn"><span class="glyphicon glyphicon-search"></span></button>
+	
+	<ul ng-init="places=['New York','Orlando','Miami','Manchester','Cincinnati','Texas','Tallahasse']">
+		 <li ng-repeat='all in places| filter: findVal'> {{all}} </li>
+	</ul>
+
+		<script src='js/angular.min.js'></script>
+
+
+</body>
+</html>

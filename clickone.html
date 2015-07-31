@@ -1,0 +1,23 @@
+<html>
+<head>
+<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+<script type="text/javascript">
+ctr=0;
+$(document).ready(function(){
+  $("button").one("click",{"design": "flower"},function(obj){
+var x=obj.data.design;
+ctr++;
+    $("p").html("hello "+x+" the value of ctr is "+ctr);
+alert("hi");
+  });
+});
+</script>
+</head>
+<body>
+<p>This is a paragraph.</p>
+<button>Bind</button>
+
+
+</body>
+</html>
+

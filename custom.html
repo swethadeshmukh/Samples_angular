@@ -1,0 +1,29 @@
+
+<!doctype html>
+<html>
+<body>
+<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+<script>
+$(document).ready(function ()
+{
+$("#p1").bind("changecolor",function ()
+{
+$(this).css({fontSize:"4em", color:"green"});
+})
+
+$("#p1").trigger("changecolor")
+
+});
+
+
+
+
+
+</script>
+<p id="p1">JQuery</p>
+
+
+</body>
+
+
+

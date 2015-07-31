@@ -1,0 +1,100 @@
+
+<html>
+<head>
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript">
+function effect1()
+{
+$('h1').hide();
+}
+ 
+function effect2()
+{
+$('h1').show();
+}
+
+
+function effect3()
+{
+$('h1').slideUp();
+}
+
+function effect4()
+{
+$('h1').slideDown();
+}
+
+function effect5()
+{
+$('h1').fadeIn(700);
+$('h1').fadeOut('slow');
+$('h1').slideToggle();
+}
+
+function effect6()
+{
+$('#sv1').fadeToggle(1700);
+}
+
+function effect7()
+{
+$('#jk').animate(
+{
+left: ["+=50", "swing"],
+opacity: [0.25, "linear"]
+
+}, 
+3000
+);
+}
+
+function effect8()
+{
+$('#jk').animate(
+{
+left: ["+=50", "swing"],
+opacity: [1.0, "linear"]
+}, 
+3000
+);
+}
+function effect9()
+{
+
+$("#jk").fadeOut(700).delay(2000).fadeIn(400);
+}
+</script>
+</head>
+
+
+
+<h1 style="color:white; background-color:rgb(12,100,86)">Effects</h1>
+
+<p>This is a paragraph.</p>
+<button onclick="effect1()">Hide</button>
+<br/>
+<button onclick="effect2()">show</button>
+
+
+<button onclick="effect3()">slideup</button>
+<button onclick="effect4()">slidedown</button>
+<button onclick="effect5()">slidetoggle</button>
+
+
+<hr/>
+<h1>Fade toggle</h1>
+<img src="images/Air pollution.jpg" id="sv1">
+<br/>
+<button onclick="effect6()">fade toggle</button>
+<h1>Fade in and out</h1>
+<img src="images/star pad.png" id="jk" style="width:100px;height:100px">
+<button onclick="effect7()">Animate</button>
+
+<button onclick="effect8()">Highlight</button>
+
+<button onclick="effect9()">slidetoggle</button>
+</body>
+</html>
+
+
+
